@@ -76,12 +76,12 @@ self.addEventListener('push', (event) => {
   let title = 'Push Notification',
     options = {
       body: 'Click to open App',
-      icon: 'icon_144x144.png',
+      icon: './icon_144x144.png',
       vibrate: [100, 50, 100],
       data: { id: 1 },
       actions: [
-        { 'action': 'Yes', 'title': 'I Like this App', 'icon': 'icon_144x144.png' },
-        { 'action': 'No', 'title': 'I hate this App', 'icon': 'icon_144x144.png' }
+        { 'action': 'Yes', 'title': 'I Like this App', 'icon': './icon_144x144.png' },
+        { 'action': 'No', 'title': 'I hate this App', 'icon': './icon_144x144.png' }
       ]
     }
 
