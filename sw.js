@@ -13,6 +13,8 @@ self.addEventListener('install', (event) => {
       .then(cache => {
         console.log('Archivos en cache')
         return cache.addAll(urlsToCache)
+      }).catch(err => {
+        console.log(err)
       })
   );
 
