@@ -1,7 +1,6 @@
 const CACHE_NAME = 'pwa_appgram_cache'
 const urlsToCache = [
     '/',
-    './',
     'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css'
   ];
 
