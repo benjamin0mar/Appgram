@@ -1,12 +1,11 @@
 {
   "name": "AppGram",
   "short_name": "AppGram",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#000000",
   "theme_color": "#FFC107",
-  "scope": "./",
   "icons": [
     {
       "src": "./icon_48x48.png",
