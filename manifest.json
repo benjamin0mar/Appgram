@@ -1,7 +1,7 @@
 {
   "name": "AppGram",
   "short_name": "AppGram",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#000000",
