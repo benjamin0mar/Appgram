@@ -1,6 +1,9 @@
 const CACHE_NAME = 'pwa_appgram_cache'
 const urlsToCache = [
     '/',
+    './',
+    './?utm=homescreen',
+    '/index.html',
     'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css'
   ];
 
@@ -13,8 +16,6 @@ self.addEventListener('install', (event) => {
       .then(cache => {
         console.log('Archivos en cache')
         return cache.addAll(urlsToCache)
-      }).catch(err => {
-        console.log(err)
       })
   );
 
@@ -75,12 +76,12 @@ self.addEventListener('push', (event) => {
   let title = 'Push Notification',
     options = {
       body: 'Click to open App',
-      icon: './icon_144x144.png',
+      icon: './assets/img/icon_144x144.png',
       vibrate: [100, 50, 100],
       data: { id: 1 },
       actions: [
-        { 'action': 'Yes', 'title': 'I Like this App', 'icon': './icon_144x144.png' },
-        { 'action': 'No', 'title': 'I hate this App', 'icon': './icon_144x144.png' }
+        { 'action': 'Yes', 'title': 'I Like this App', 'icon': './assets/img/icon_144x144.png' },
+        { 'action': 'No', 'title': 'I hate this App', 'icon': './assets/img/icon_144x144.png' }
       ]
     }
 
